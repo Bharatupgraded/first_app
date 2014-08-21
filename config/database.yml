@@ -10,16 +10,16 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: postgresql
-  encoding: unicode
+  adapter: mysql2
+  encoding: utf8
   pool: 5
-  username: skjbkndollqlsl
-  password: 64cq-3dYWfeCV6F_MHvMnvfLii
+  username: root
+  password: root
   socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
-  database: d6ut4d3arsg4q1
+  database: first_app_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
