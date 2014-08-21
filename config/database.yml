@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: first_app_development
+  database: d6ut4d3arsg4q1
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: first_app_production
-  username: first_app
-  password: <%= ENV['FIRST_APP_DATABASE_PASSWORD'] %>
+  database: d6ut4d3arsg4q1
+  username: skjbkndollqlsl
+  password: 64cq-3dYWfeCV6F_MHvMnvfLii
