@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: d6ut4d3arsg4q1
-  username: skjbkndollqlsl
-  password: 64cq-3dYWfeCV6F_MHvMnvfLii
+  database: first_app_production
+  username: root
+  password: root
