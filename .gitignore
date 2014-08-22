@@ -6,7 +6,9 @@
 
 # Ignore bundler config.
 /.bundle
-
+log/*.log
+tmp/**/*
+tmp/*
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
@@ -16,6 +18,7 @@ Gemfile.lock
 /log/*.log
 /tmp
 doc/api
+doc/app
 *.swp
 *~
 .DS_Store
