@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.0.0'
 group :development do
     gem 'capistrano'
 end
+gem 'heroku_external_db'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -31,7 +32,9 @@ gem 'spring',        group: :development
 gem 'heroku'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+group :production do
+  gem 'pg'
+end
 # Use unicorn as the app server
 # gem 'unicorn'
 
