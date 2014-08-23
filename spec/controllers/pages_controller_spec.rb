@@ -7,6 +7,10 @@ RSpec.describe PagesController, :type => :controller do
       get :home
       expect(response).to be_success
     end
+
+    it "returns right title" do
+     get :home 
+    end
   end
 
   describe "GET contact" do
@@ -15,5 +19,10 @@ RSpec.describe PagesController, :type => :controller do
       expect(response).to be_success
     end
   end
-
+  describe "GET about" do
+    it "returns http success" do
+      get :about
+      expect(response).to be_success
+    end
+  end
 end

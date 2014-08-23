@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.5'
 # Use mysql as the database for Active Record
 gem 'mysql2'
-gem 'pg'
+# gem 'pg'
 # Use SCSS for stylesheets
 gem 'rails_12factor', group: :production
 gem 'sass-rails', '~> 4.0.3'
@@ -17,10 +17,17 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 group :development do
     gem 'capistrano'
+    gem 'guard'
     gem 'rspec-rails'
+    gem 'guard-rspec'
+	gem 'guard-livereload'
+	gem 'spork-rails', github: 'sporkrb/spork-rails' # rubygems version not rails 4 compatible
+	gem 'guard-spork'
+	gem 'childprocess'
 end
 group :test do
     gem 'rspec'
+    gem 'autotest', '~> 4.4.6'
 end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
